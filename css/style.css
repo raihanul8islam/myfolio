@@ -1,0 +1,299 @@
+/* common css starts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.align-center{
+    align-items: center;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.heading p{
+    font-size: 16px;
+    color: #7e8287;
+    line-height: 41px;
+    font-weight: 400;
+}
+.heading p strong{
+    font-size: 23px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button{
+    background-color: #cfc91d;
+    color: #0b1016;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 19px 44px;
+    display: inline-block;
+    
+}
+.text-center{
+    text-align: center;
+}
+
+/* common css ends */
+
+/* nav bar starts */
+nav{
+    background-color: #02918c;
+}
+
+
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 22px;
+    display: block;
+}
+
+/* nav bar ends */
+/* banner starts */
+
+#banner{
+    background-image: url(../images/banner.jpg);
+    height: 727px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#banner .row{
+    height: 720px;
+}
+#banner .banner-con{
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+#banner .banner-con h6{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner-con h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#benner .banner-con p{
+    font-size: 16px;
+}
+#banner .banner-con img{
+    margin: 50px 0;
+}
+
+/* banner ends */
+
+/* about bar stats */
+#about{
+    padding: 98px 0;
+}
+#about .heading p{
+    padding: 0 137px;
+}
+
+#about .about_card {
+    margin-top: 98px;
+    width: 25%;
+    border-right: 1px solid #81868d;
+    padding: 37px 60px;
+    color: #7e8287;
+}
+#about .about_card:last-child {
+    border-right: none;
+}
+#about .about_card h3{
+    padding: 35px 0;
+    font-size: 16px;
+    font-weight: 800;
+}
+#about .about_card p{
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 21px;
+}
+/* about bar ends */
+
+/* service bar starts */
+#service {
+    background-image: url("../images/banner-2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+}
+#service .innner_container {
+    width: 50%;
+}
+
+#service .heading {
+    text-align: left;
+}
+#service .heading h2{
+    padding-bottom: 42px;
+}
+#service .heading p{
+    padding-top: 35px;
+}
+#service .service_card {
+    width: 50%;
+    padding-right: 110px;
+    margin-top: 80px;
+}
+#service .service_card h3{
+    color: #7e8287;
+    padding: 22px 0;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+#service .service_card p{
+    color: #7e8287;
+    font-size: 11px;
+    font-weight: 400;
+    
+}
+
+/* service bar ends */
+/* my work starts */
+#mywork .heading{
+    margin-top: 105px;
+    margin-bottom: 84px;
+}
+#mywork .heading p{
+    padding: 0 234px;
+}
+#mywork .mywork_card {
+    width: 25%;
+    position: relative;
+}
+#mywork .mywork_card img {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+#mywork .mywork_card .overlay {
+    position: absolute;
+    background: rgba(2, 145, 140,0.85);
+    inset: 20px 28px;
+    transform: scale(0);
+    transform-origin: left top;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+#mywork .mywork_card:hover .overlay{
+    transform: scale(1);
+}
+#mywork .overlay h4{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+}
+#mywork .overlay p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 45px;
+}
+/* my work ends */
+/* contact starts */
+#contact_me .heading{
+    margin-top: 98px;
+    margin-bottom: 74px;
+}
+#contact_me .heading p{
+    padding: 0 234px;
+}
+#contact_me .contact_form{
+    background-color: #0b0b0b;
+    padding-top: 35px;
+}
+#contact_me .contact_form input{
+    display: block;
+    margin: 0 auto;
+    background: none;
+    color: #616568;
+    text-align: center;
+    padding: 18px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid #616568;
+    margin-bottom: 51px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+#contact_me .contact_form input:focus{
+    outline: none;
+    border-bottom-color: #02918c;
+}
+#contact_me .contact_form input:nth-child(1),
+#contact_me .contact_form input:nth-child(2){
+    width: 640px;
+}
+#contact_me .contact_form input:nth-child(3),
+#contact_me .contact_form input:nth-child(4){
+    width: 920px;
+}#contact_me .contact_form button{
+    border: none;
+    cursor: pointer;
+    margin-top: 45px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+}
+
+/* contact ends */
+/* fotter starts */
+#fotter{
+    background-color: #000000;
+}
+#fotter .myfolio{
+    color: #7e8287;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px 0;
+}
+/* fotter ends */
